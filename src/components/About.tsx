@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const features = [
   "Echipă medicală cu experiență de peste 15 ani",
@@ -10,7 +11,7 @@ const features = [
 
 export const About = () => {
   return (
-    <section className="py-20 bg-muted">
+    <section id="about" className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -34,8 +35,10 @@ export const About = () => {
                 </div>
               ))}
             </div>
-            <Button variant="default" size="lg">
-              Cunoaște Echipa
+            <Button variant="default" size="lg" asChild>
+              <Link to="/team">
+                Cunoaște Echipa
+              </Link>
             </Button>
           </div>
           <div className="relative">

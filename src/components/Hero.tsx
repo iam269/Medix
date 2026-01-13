@@ -23,10 +23,19 @@ export const Hero = () => {
           Servicii medicale de calitate superioară cu o echipă dedicată pentru binele tău
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button variant="hero" size="lg" className="bg-card text-card-foreground hover:bg-card/90">
+          <Button
+            variant="hero"
+            size="lg"
+            className="bg-card text-card-foreground hover:bg-card/90"
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Programează Consultație
           </Button>
-          <Button variant="secondary" size="lg">
+          <Button
+            variant="secondary"
+            size="lg"
+            onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Serviciile Noastre
           </Button>
         </div>
