@@ -1,6 +1,6 @@
 # 🏥 Medix - Modern Medical Clinic Website
 
-![Medix Preview](image.jpg)
+![Medix Preview](src/assets/image.png)
 
 **🌐 Live Demo:** [https://iam269.github.io/Medix/](https://iam269.github.io/Medix/)
 
