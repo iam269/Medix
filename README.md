@@ -2,7 +2,7 @@
 
 ![Medix Preview](src/assets/image.png)
 
-**🌐 Live Demo:** [https://iam269.github.io/Medix/](https://iam269.github.io/Medix/)
+**🌐 Live Demo:** [https://medix-eosin.vercel.app/](https://medix-eosin.vercel.app/)
 
 Welcome to **Medix**! 🌟 A cutting-edge, responsive web application designed for medical clinics to showcase their services, team, and connect with patients. Built with the latest web technologies for optimal performance and user experience.
 
@@ -65,8 +65,6 @@ Welcome to **Medix**! 🌟 A cutting-edge, responsive web application designed f
 - `npm run build:dev` - Build for development
 - `npm run preview` - Preview production build locally
 - `npm run lint` - Run ESLint for code quality checks
-- `npm run predeploy` - Prepare for deployment
-- `npm run deploy` - Deploy to GitHub Pages
 
 ## 🏗️ Project Structure
 
@@ -81,7 +79,8 @@ medix/
 │   │   ├── 🩺 Services.tsx
 │   │   ├── 👥 About.tsx
 │   │   ├── 📞 Contact.tsx
-│   │   └── 🦶 Footer.tsx
+│   │   ├── 🦶 Footer.tsx
+│   │   └── 🧭 Navbar.tsx
 │   ├── 📁 pages/        # Page components
 │   │   ├── 🏡 Index.tsx
 │   │   ├── 🔍 ServiceDetail.tsx
@@ -101,6 +100,7 @@ medix/
 - Stunning hero section with background image
 - Compelling headline and call-to-action buttons
 - Responsive design for all screen sizes
+- Smooth scroll navigation to sections
 
 ### 🩺 Services Component
 - Grid layout showcasing medical services
@@ -117,23 +117,30 @@ medix/
 - Clinic address, phone, and email
 - Map integration (if applicable)
 
-### 👨‍⚕️ Team Component
-- Staff profiles with photos and bios
-- Qualifications and specialties
-- Professional layout
+### 🦶 Footer Component
+- Dynamic copyright year (automatically updates)
+- Quick links with smooth scroll navigation
+- Social media links
+- Contact information
+
+### 🧭 Navbar Component
+- Responsive navigation
+- Smooth scroll to sections
+- Mobile-friendly menu
 
 ## 🚀 Deployment
 
-The application is configured for deployment to GitHub Pages:
+The application is configured for deployment to Vercel:
 
 1. **🔧 Configure deployment**
-   - Update `homepage` in `package.json` with your GitHub repository URL
-   - Ensure `vite.config.ts` has correct base path for production
+   - Vercel automatically detects Vite projects
+   - Connect your GitHub repository to Vercel
+   - Vercel will use `npm run build` as the build command
 
 2. **📤 Deploy**
-   ```bash
-   npm run deploy
-   ```
+   - Push your code to GitHub
+   - Import the repository in Vercel Dashboard
+   - Deploy will happen automatically on push to main branch
 
 ## 🤝 Contributing
 
