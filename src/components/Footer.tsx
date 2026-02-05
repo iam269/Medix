@@ -1,6 +1,13 @@
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <footer className="bg-card border-t border-border py-12">
       <div className="container mx-auto px-4">
@@ -34,10 +41,9 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Link-uri Rapide</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/" className="text-muted-foreground hover:text-primary">Acasă</Link></li>
-              <li><Link to="/#services" className="text-muted-foreground hover:text-primary">Servicii</Link></li>
-              <li><Link to="/#about" className="text-muted-foreground hover:text-primary">Despre Noi</Link></li>
-              <li><Link to="/#contact" className="text-muted-foreground hover:text-primary">Contact</Link></li>
+              <li><button onClick={() => scrollToSection("services")} className="text-muted-foreground hover:text-primary text-left">Servicii</button></li>
+              <li><button onClick={() => scrollToSection("about")} className="text-muted-foreground hover:text-primary text-left">Despre Noi</button></li>
+              <li><button onClick={() => scrollToSection("contact")} className="text-muted-foreground hover:text-primary text-left">Contact</button></li>
             </ul>
           </div>
 

@@ -4,7 +4,7 @@ import { fileURLToPath, URL } from 'node:url'
 import { componentTagger } from 'lovable-tagger'
 
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/medix/' : '/',
+  base: '/',
   server: {
     host: '::',
     port: 8080,
