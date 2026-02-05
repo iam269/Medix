@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -80,7 +82,7 @@ const Footer = () => {
 
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 Clinica Sănătate. Toate drepturile rezervate.
+            © {currentYear} Clinica Sănătate. Toate drepturile rezervate.
           </p>
         </div>
       </div>
