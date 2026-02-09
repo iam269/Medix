@@ -19,6 +19,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">Clinica Sănătate</h3>
             <p className="text-muted-foreground text-sm">
               Oferim servicii medicale de înaltă calitate pentru sănătatea dumneavoastră.
+              Acest website a fost creat de Ionita Aurel Miahi.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-muted-foreground hover:text-primary">
